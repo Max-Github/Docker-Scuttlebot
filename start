@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker run -p 8008:8008  -it -v $PWD/data:/root/.ssb/ scuttlebot-pub:latest byobu new-session -s "pub" "while true; do sbot server --host ssb.badran.net.nz; done"
